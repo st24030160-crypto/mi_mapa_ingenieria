@@ -1,26 +1,34 @@
-/* Reset básico para que el mapa ocupe bien el espacio */
-body, html {
+/* Fondo general de la página con un tono gris oscuro profesional */
+body {
+    background-color: #121826; /* Un color "Sistemas" (Navy/Charcoal) */
+    color: #e9ecef; /* Texto claro para que sea legible */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Ajuste para que el mapa no se pegue al borde y se vea moderno */
 #mapa-editor {
-    height: 600px;
+    height: 70vh; /* Altura del mapa */
     width: 95%;
-    margin: 20px auto; /* Centra el mapa */
-    border: 3px solid #2c3e50;
+    margin: 20px auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    background-color: #ecf0f1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #2d3748;
 }
 
-/* Estilo para los popups del mapa */
-.leaflet-popup-content-wrapper {
-    border-radius: 8px;
-    padding: 5px;
+/* Estilo para la tarjeta de descripción en modo oscuro */
+.card {
+    background-color: #1a202c !important; /* Fondo de la tarjeta oscuro */
+    color: #cbd5e0 !important;
+    border: 1px solid #2d3748 !important;
 }
 
-.leaflet-popup-tip {
-    background: white;
+.card-header {
+    background-color: #2d3748 !important;
+    border-bottom: 1px solid #4a5568 !important;
+}
+
+.text-muted {
+    color: #a0aec0 !important;
 }
